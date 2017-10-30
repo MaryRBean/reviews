@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head><link rel="stylesheet" href="./stylesheet.css"/>
+<title>A review</title>
+</head>
+
+<body>
+
+	<header>
+		<h1> A Review </h1>
+	</header>
+
+	<div>
+		<h2 th:text="${review.title}"></h2>
+		<h2 th:text="${review.reviewCategory}"></h2>
+		<h2 th:text="${review.reviewContent}"></h2>
+		<img th:src = "${review.img}"></img>
+	<footer>
+		<a href="http://localhost:8080/reviews">Back to home</a>
+	</footer>	
+	</div>
+
+</body>
+</html>
